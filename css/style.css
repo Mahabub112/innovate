@@ -1,0 +1,783 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1407px;
+    margin: 0 auto;
+}
+
+.title h4{
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #ff5538;
+    text-transform: capitalize;
+}
+.title h2{
+    font-family: "poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 600px;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 449px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+/* =======================================
+        Nav Part Start
+=========================================*/
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .box{
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+   
+}
+nav .nav-item{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+nav .nav-item ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+}
+nav .nav-item ul i{
+    margin-left: 14px;
+}
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+   align-items: center;
+  
+}
+nav .button a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 18px;
+}
+
+/* =======================================
+        Nav Part Start
+=========================================*/
+
+/* =======================================
+        Banner Part Start
+=========================================*/
+.banner{
+    background: url(../images/banner-bg.png);
+    padding: 300px 0;
+    position: relative;
+   
+}
+.banner .round-shape{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+    left: 734px;
+    animation: rotated 5s infinite linear;
+}
+.banner .round-shape .inner-shap{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    left: 9px;
+    bottom: 0;
+    
+}
+@keyframes rotated{
+    form{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.banner .dot{
+    width: 20px;
+    height: 20px;
+    background: rgb(158, 21, 236);
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    right: 700px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb{
+    form{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(50px);
+    }
+}
+.banner .dot1{
+    width: 20px;
+    height: 20px;
+    background: rgb(11, 198, 231);
+    border-radius: 50%;
+    position: absolute;
+    top: 302px;
+    left: 488px;
+    animation: tb1 2s infinite linear alternate;
+}
+@keyframes tb1{
+    form{
+        transform: translateX(-50px);
+    }to{
+        transform: translateX(50px);
+    }
+}
+.banner .dot2{
+    width: 20px;
+    height: 20px;
+    background: rgb(230, 150, 3);
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb{
+    form{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(50px);
+    }
+}
+.banner .cross{
+    width: 20px;
+    height: 20px;
+    color: rgb(158, 21, 236);
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: 500px;
+    animation: rotated 5s infinite linear;
+}
+
+
+.banner h1{
+    font-family: "poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 700px;
+    color: #29313D;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #29313D;
+    text-align: center;
+    margin: 0 auto;
+    width: 547px;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner .button {
+    text-align: center;
+}
+.banner .button a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 18px;
+   margin: 0 12px;
+   border: 1px solid transparent;
+   transition: .4s;
+    
+}
+.banner .button a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+
+/* =======================================
+        Banner Part Start
+=========================================*/
+
+
+/* =======================================
+        Service Part Start
+=========================================*/
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .item{
+    width: 32%;
+    background: #fff;
+    -webkit-box-shadow: -2px 10px 20px -8px rgba(0,0,0,0.12);
+    -moz-box-shadow: -2px 10px 20px -8px rgba(0,0,0,0.12);
+    box-shadow: -2px 10px 20px -8px rgba(0,0,0,0.12);
+    padding: 40px 34px;
+    box-sizing: border-box;
+    }
+.service .item h3{
+    font-family: "poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 600px;
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+.service .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #29313D;
+
+}
+
+/* =======================================
+        Service Part Start
+=========================================*/
+
+
+
+/* =======================================
+        digitallife Part Start
+=========================================*/
+.digitallife .box{
+    display: flex;
+}
+
+.digitallife .left{
+    width: 50%;
+}
+.digitallife .left img{
+    position: relative;
+    top: 40px;
+    right: 0px;
+    width: 110%;
+}
+.digitallife .right{
+    width: 50%;
+    background: url(../images/digital-bg.png) no-repeat ;
+   background-size: cover;
+    padding: 100px 185px;
+    /* position: relative; */
+}
+.digitallife .right img{
+    position: absolute;
+    bottom: -909px;
+    right: 0;
+    animation: myanim 3s infinite alternate ;
+}
+
+@keyframes myanim{
+    form{
+        transform: rotate(0);
+    }to{
+        transform: rotate(-19deg);
+    }
+}
+
+.digitallife .round-shape{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 1386px;
+    left: 598px;
+    animation: rotated 5s infinite linear;
+}
+.digitallife .round-shape .inner-shap{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    left: 9px;
+    bottom: 0;
+    
+}
+@keyframes rotated{
+    form{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.digitallife .dot{
+    width: 20px;
+    height: 20px;
+    background: rgb(158, 21, 236);
+    border-radius: 50%;
+    position: absolute;
+    top: 1470px;
+    left: 1551px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb{
+    form{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(50px);
+    }
+}
+.digitallife .right h3{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600px;
+    color: #29313D;
+    width: 570px;
+}
+.digitallife .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #29313D;
+    width: 501px;
+    line-height: 200%;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    
+}
+
+.digitallife .right a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 18px;
+   margin: 0 12px;
+   border: 1px solid transparent;
+   transition: .4s;
+    
+}
+.digitallife .right a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+/* =======================================
+        digitallife Part end
+=========================================*/
+
+/* =======================================
+        Work Part start
+=========================================*/
+.work{
+    margin-top: 120px;
+ 
+}
+.work .bodyphoto{
+    position: absolute;
+    top: -326px;
+    left: -244px;
+}
+.work .bodyphoto img{
+    width: 429px;
+    height: 602px;
+}
+.work .box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.work .box .left{
+    width: 80%;
+    
+}
+.work .box .left .title h2{
+    width: 693px;
+    margin-bottom: 60px;
+}
+.work .box .right{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.work .right a{
+    display: inline-block;
+    background: transparent;
+  
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #ff5538;
+    
+    border-radius: 18px;
+   margin: 0 12px;
+   border: 1px solid  #ff5538;
+   transition: .4s;
+    
+}
+.work .right a:hover{
+    background: #ff5538;
+    color: #fff;
+    border-color: transparent;
+}
+
+.work .small-item {
+    width: 40%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.work .larger-item {
+    width: 58%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.work img{
+    width: 100%;
+    height: 332px;
+}
+.work .text-box{
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    position: absolute;
+    bottom: -123px;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.07);
+-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.07);
+box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.07);
+opacity: 0;
+transition: .4s;
+}
+.work .small-item:hover .text-box{
+    opacity: 1;
+    bottom: 0;
+}
+.work .larger-item:hover .text-box{
+    opacity: 1;
+    bottom: 0;
+}
+.work .text-box h4{
+    font-family: "poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 600px;
+    color: #29313D;
+}
+.work .text-box a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #ff5538;
+}
+/* =======================================
+        Work Part end
+=========================================*/
+/* =======================================
+        counter Part start
+=========================================*/
+.counting .box{
+    display: flex;
+}
+.counting {
+    background: url(../images/countingbg.png) no-repeat center;
+    background-size: cover;
+    padding: 120px 0;
+}
+.counting .count{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+  
+}
+.counting .count .item{
+    width: 46%;
+    background: #fff;
+    padding: 74px 0;
+}
+.counting .count .item h3{
+    font-family: "poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600px;
+}
+.counting .count .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+}
+.counting .details{
+    width: 50%;
+    padding-left: 100px;
+    box-sizing: border-box;
+    
+}
+.counting .details .title h2{
+    width: 552px;
+}
+.counting .details p{
+    width: 524px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 200%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.counting .details a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 18px;
+   margin: 0 12px;
+   border: 1px solid transparent;
+   transition: .4s;
+    
+}
+.counting .details a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+/* =======================================
+        counter Part end
+=========================================*/
+
+/* =======================================
+        Global Part Start
+=========================================*/
+.global{
+    margin-top: 120px;
+}
+.global .title{
+    text-align: center;
+}
+.global .title h2{
+    width: 849px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.global .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =======================================
+        Global  Part end
+=========================================*/
+/* =======================================
+        Coustmar  Part end
+=========================================*/
+.coustomer{
+background: url(../images/bgcoustomer.png) no-repeat center;
+background-size: cover;
+height: 500px;
+padding: 139px 0;
+margin-top: 120px;
+}
+.coustomer .box{
+    display: flex;
+}
+.coustomer .details{
+    width: 50%;
+}
+.coustomer .details .title h2{
+    width: 500px;
+}
+.coustomer .details .imgebox{
+    display: flex;
+    column-gap: 28px;
+    margin-top: 60px;
+}
+.coustomer .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 180%;
+    margin: 60px 0;
+}
+.coustomer .details h3{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600px;
+   
+}
+.coustomer .img{
+    width: 50%;
+    text-align: center;
+}
+.coustomer .down-arrow {
+    background: #000;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+/* =======================================
+        coustomer  Part end
+=========================================*/
+/* =======================================
+        go-project  Part Start
+=========================================*/
+.gproject{
+    background: url(../images/talkbg.png) no-repeat center;
+    background-size: cover;
+}
+.gproject .box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #29313D;
+    padding-top: 100px;
+    
+    
+}
+.gproject .left h4{
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+   
+}
+.gproject .left h2{
+    font-family: "poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 600px;
+    margin-top: 7px;
+    margin-bottom: 48px;
+    
+}
+
+.gproject .para p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 180%;
+    width: 1220px;
+    padding-bottom: 100px;
+    margin-top: 24px;
+}
+
+.gproject .right a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 18px;
+   margin: 0 12px;
+   border: 1px solid transparent;
+   transition: .4s;
+    
+}
+.gproject .right a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+/* =======================================
+        go-project  Part end
+=========================================*/
+/* =======================================
+        all details  Part Start
+=========================================*/
+
+.all-detais .box{
+    display: flex;
+    padding: 140px 0;
+}
+.all-detais .left{
+    width: 40%;
+}
+.all-detais .left p{
+    margin-top: 44px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    width: 449px;
+    line-height: 180%;
+    color: #29313D;
+}
+.all-detais .right{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.all-detais .right h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600px;
+    color: 29313D;
+    margin-bottom: 48px;
+}
+.all-detais .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600px;
+    color: 29313D;
+    margin-bottom: 30px;
+}
+/* =======================================
+       All details  Part end
+=========================================*/
+/* =======================================
+      Footer  Part end
+=========================================*/
+footer .box{
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 0;
+}
+footer p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #29313D;
+}
+footer .right{
+    display: flex;
+    column-gap: 30px;
+}
+/* =======================================
+       Footer  Part end
+=========================================*/
